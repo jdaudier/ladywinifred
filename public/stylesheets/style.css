@@ -1,0 +1,278 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.svg-paths-container {
+  display: none;
+}
+header {
+  background: url("/images/dark_embroidery.png") repeat;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.wrapper {
+  margin: 0 auto;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+nav {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+nav a {
+  color: #f89100;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #fff;
+}
+nav span {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: 10%;
+}
+.logo {
+  display: inline-block;
+  width: 300px;
+}
+.divider {
+  border-bottom: 7px solid;
+  border-color: #fff;
+  width: 0;
+}
+main {
+  flex: 1;
+}
+.hero {
+  display: table;
+}
+.video,
+.description {
+  display: table-cell;
+  padding: 60px 0;
+}
+.video {
+  text-align: center;
+  width: 640px;
+}
+iframe {
+  border-radius: 4px;
+}
+.description {
+  color: #666;
+  font-size: 2.2rem;
+  line-height: 1.85;
+  padding-left: 70px;
+  vertical-align: middle;
+}
+.news {
+  background: #f4f4f4;
+  display: table;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  width: 100%;
+}
+.news-bubble-col,
+.news-photo-col {
+  display: table-cell;
+}
+.news-bubble-col {
+  vertical-align: middle;
+}
+.news-bubble {
+  background: #666;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1.85;
+  padding: 30px;
+  position: relative;
+  width: 640px;
+  vertical-align: middle;
+}
+.news-signature {
+  font-family: 'Rochester', cursive;
+  font-size: 2.5rem;
+  text-align: right;
+}
+.news-bubble-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 20px 45px;
+  border-color: transparent transparent transparent #666;
+  position: absolute;
+  top: 70px;
+  right: -45px;
+}
+.news-photo-col {
+  vertical-align: middle;
+  width: 640px;
+}
+.news-photo {
+  border-radius: 50%;
+  height: 406px;
+  margin: 0 auto;
+  width: 406px;
+}
+.news-photo img {
+  border-radius: 50%;
+  border: 6px solid #4f4f4f;
+}
+.showtimes {
+  background: url("/images/dark_embroidery.png") repeat;
+  display: table;
+  padding-bottom: 90px;
+  padding-top: 90px;
+  width: 100%;
+}
+.showtimes-poster,
+.showtimes-schedule {
+  display: table-cell;
+}
+.showtimes-poster {
+  text-align: center;
+  transform: rotate(-6deg);
+  width: 730px;
+}
+.showtimes-poster img {
+  border-radius: 4px;
+  border: 6px solid #fff;
+}
+.showtimes-schedule {
+  color: #fff;
+  font-size: 2.6rem;
+  vertical-align: middle;
+}
+.showtimes-listing li {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+button {
+  background: #f89100;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 15px 60px;
+}
+button:hover {
+  background: #e68701;
+}
+.cta-comps {
+  text-align: center;
+}
+.cta-comps a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.photos {
+  border-bottom: 6px solid #fff;
+  border-top: 6px solid #fff;
+  height: 233px;
+  overflow: hidden;
+  width: 100%;
+}
+/* Infinite photo banner from: http://designshack.net/articles/css/infinitephotobanner */
+.photo-banner {
+  height: 233px;
+  width: 3900px;
+}
+.photo-banner img:first-child {
+  animation: bannermove 40s linear infinite;
+}
+footer {
+  background: #f89100;
+  flex: none;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.social-links {
+  padding-left: 0;
+  text-align: center;
+}
+.social-links li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 10px;
+}
+.social-links a {
+  display: block;
+  height: 46px;
+  padding: 10px;
+  width: 46px;
+}
+.icon {
+  display: block;
+  transition: fill 500ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+  height: 100%;
+  width: 100%;
+  fill: #fff;
+}
+.icon:hover {
+  fill: #3c4651;
+}
+@-moz-keyframes bannermove {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -2410px;
+  }
+}
+@-webkit-keyframes bannermove {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -2410px;
+  }
+}
+@-o-keyframes bannermove {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -2410px;
+  }
+}
+@-ms-keyframes bannermove {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -2410px;
+  }
+}
+@keyframes bannermove {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -2410px;
+  }
+}
