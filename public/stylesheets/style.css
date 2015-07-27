@@ -243,6 +243,25 @@ footer {
 .icon:hover {
   fill: #3c4651;
 }
+.credit {
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.28px;
+  text-align: center;
+}
+.credit span {
+  font-size: 1rem;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+.credit .link {
+  color: #fff;
+  margin-left: 6px;
+  text-decoration: none;
+}
+.credit .link:hover {
+  color: #3c4651;
+}
 @-moz-keyframes bannermove {
   0% {
     margin-left: 0;
