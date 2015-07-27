@@ -250,7 +250,8 @@ footer {
   text-align: center;
 }
 .credit span {
-  font-size: 1rem;
+  color: #ff3578;
+  font-size: 1.2rem;
   margin-right: 6px;
   margin-left: 6px;
 }
