@@ -1,4 +1,5 @@
-@import 'variables'
+@import "variables"
+
 
 html
   box-sizing border-box
@@ -9,7 +10,7 @@ html
 
 body
   display flex
-  font-family 'Oswald', sans-serif
+  font-family "Oswald", sans-serif
   font-weight 300
   min-height 100vh
   flex-direction column
@@ -24,8 +25,11 @@ header
 
 .wrapper
   margin 0 auto
-  padding-left 70px
-  padding-right 70px
+  width 1044px
+
+  @media screen and (min-width: 0) and (max-width: 1044px)
+    padding 50px
+    width 100%
   
 nav
   align-items center
@@ -44,21 +48,26 @@ nav
 
   span
     display inline-block
-    font-size 1.2rem
+    font-size 1.5rem
     text-transform uppercase
-    width 10%
+    width 16%
 
 .logo
   display inline-block
   width 300px
 
-.divider
+.animated-divider
   border-bottom 7px solid
   border-color white
   width 0
 
 main
   flex 1
+
+.photos
+  height 233px
+  overflow hidden
+  width 100%
 
 .hero
   display table
@@ -72,17 +81,17 @@ main
   width 640px
 
 iframe
-  border-radius 4px
+  border-radius 6px
 
 .description
-  color $dove-gray
-  font-size 2.2rem
+  color $dove_gray
+  font-size 1.8rem
   line-height 1.85
-  padding-left 70px
+  padding-left 50px
   vertical-align middle
 
 .news
-  background $wild-sand
+  background $light_gray
   display table
   padding-bottom 60px
   padding-top 60px
@@ -95,18 +104,19 @@ iframe
   vertical-align middle
 
 .news-bubble
-  background $dove-gray
-  border-radius 4px
+  background $dove_gray
+  border-radius 6px
   color white
-  font-size 2.2rem
+  font-size 1.8rem
   line-height 1.85
+  margin-right 50px
   padding 30px
   position relative
-  width 640px
+  width 580px
   vertical-align middle
 
 .news-signature
-  font-family 'Rochester', cursive
+  font-family "Rochester", cursive
   font-size 2.5rem
   text-align right
 
@@ -115,7 +125,7 @@ iframe
   height 0
   border-style solid
   border-width 20px 0 20px 45px
-  border-color transparent transparent transparent $dove-gray
+  border-color transparent transparent transparent $dove_gray
   position absolute
   top 70px
   right -45px
@@ -147,10 +157,10 @@ iframe
 .showtimes-poster
   text-align center
   transform rotate(-6deg)
-  width 730px
+  width 630px
 
   img
-    border-radius 4px
+    border-radius 6px
     border 6px solid white
 
 .showtimes-schedule
@@ -173,15 +183,16 @@ iframe
 
 button
   background $orange
-  border-radius 4px
+  border-radius 6px
   border none
   color white
   font-weight 700
   letter-spacing 2px
   padding 15px 60px
+  transition background 500ms cubic-bezier(.19,1,.22,1) 0ms
 
   &:hover
-    background #e68701
+    background $darker_orange
 
 .cta
   text-align center
@@ -193,13 +204,6 @@ button
     color white
     font-size 1rem
     text-decoration none
-
-.photos
-  border-bottom 6px solid white
-  border-top 6px solid white
-  height 233px
-  overflow hidden
-  width 100%
 
 /* Infinite photo banner from: http://designshack.net/articles/css/infinitephotobanner */
 .photo-banner
@@ -244,7 +248,7 @@ footer
   fill white
 
   &:hover
-    fill $limed-spruce
+    fill $limed_spruce
 
 .credit
   color white
@@ -253,7 +257,7 @@ footer
   text-align center
 
   span
-    color $radical-red
+    color $radical_red
     font-size 1.2rem
     margin-right 6px
     margin-left 6px
@@ -262,6 +266,7 @@ footer
     color white
     margin-left 6px
     text-decoration none
+    transition color 500ms cubic-bezier(.19,1,.22,1) 0ms
 
     &:hover
-      color $limed-spruce
+      color $limed_spruce

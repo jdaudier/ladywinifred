@@ -1,5 +1,5 @@
 $(function() {
-	$('.divider').velocity({
+	$('.animated-divider').velocity({
 		width: '100%',
 		borderColor: '#f89100'
 	}, {
