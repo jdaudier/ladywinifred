@@ -1,0 +1,42 @@
+/* Modified version of http://codyhouse.co/gem/back-to-top
+----------------------------------------------------- */
+// minimum tap area iOS (Android is even bigger)
+$back-to-top-size-small = 44px
+$back-to-top-size-large = 50px
+
+.top
+  height $back-to-top-size-small
+  width $back-to-top-size-small
+  position fixed
+  bottom 38px
+  right 15px
+  z-index 900
+  box-shadow 0 0 10px rgba(#000, .05)
+  border-radius 50%
+  background rgba($med_gray, .8) url('/images/top-arrow.svg') no-repeat center 50%
+  visibility hidden
+  opacity 0
+  transition opacity .3s 0s, visibility 0s .3s
+
+  &.is-visible /* the button becomes visible */
+    transition opacity .3s 0s, visibility 0s 0s
+    visibility visible
+    opacity 1
+
+  @media only screen and (min-width: 1044px)
+    height $back-to-top-size-large
+    width $back-to-top-size-large
+    right 30px
+    bottom 35px
+
+// screen readers only
+// h5pb: http://git.io/byNN
+.hidden-visually
+  border 0
+  clip rect(0 0 0 0)
+  height 1px
+  margin -1px
+  overflow hidden
+  padding 0
+  position absolute
+  width 1px
