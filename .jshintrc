@@ -1,0 +1,29 @@
+{
+    "globals": {
+        "$": true,
+        "console": true,
+        "exports": true,
+        "jQuery": true,
+        "module": true,
+        "require": true
+    },
+    "bitwise": true,
+    "camelcase": true,
+    "browser": true,
+    "curly": true,
+    "debug": true,
+    "devel": true,
+    "eqeqeq": true,
+    "esnext": true,
+    "freeze": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "nonbsp": true,
+    "nonew": true,
+    "strict": true,
+    "trailing": true,
+    "undef": true,
+    "unused": "vars"
+}
