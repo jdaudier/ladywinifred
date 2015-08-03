@@ -1,3 +1,40 @@
+.top {
+  height: 44px;
+  width: 44px;
+  position: fixed;
+  bottom: 38px;
+  right: 15px;
+  z-index: 900;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 50%;
+  background: rgba(188,189,192,0.8) url("/images/top-arrow.svg") no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.top.is-visible /* the button becomes visible */ {
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+  visibility: visible;
+  opacity: 1;
+}
+@media only screen and (min-width: 1044px) {
+  .top {
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    bottom: 35px;
+  }
+}
+.hidden-visually {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -19,8 +56,8 @@ body {
 }
 header {
   background: url("/images/dark_embroidery.png") repeat;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .wrapper {
   margin: 0 auto;
@@ -55,7 +92,7 @@ nav span {
 }
 .logo {
   display: inline-block;
-  width: 300px;
+  width: 350px;
 }
 .animated-divider {
   border-bottom: 7px solid;
@@ -70,6 +107,16 @@ main {
   overflow: hidden;
   width: 100%;
 }
+/* INFINITE PHOTO BANNER: http://designshack.net/articles/css/infinitephotobanner
+----------------------------------------------------- */
+.photo-banner {
+  width: 3850px;
+}
+.photo-banner img:first-child {
+  animation: bannermove 30s linear infinite;
+}
+/* END OF PHOTO BANNER
+----------------------------------------------------- */
 .hero {
   display: table;
 }
@@ -92,7 +139,7 @@ iframe {
   padding-left: 50px;
   vertical-align: middle;
 }
-.news {
+#news {
   background: #dcdcdc;
   display: table;
   padding-bottom: 60px;
@@ -110,10 +157,10 @@ iframe {
   background: #666;
   border-radius: 6px;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.82rem;
   line-height: 1.85;
   margin-right: 50px;
-  padding: 30px;
+  padding: 40px;
   position: relative;
   width: 580px;
   vertical-align: middle;
@@ -147,7 +194,7 @@ iframe {
   border-radius: 50%;
   border: 6px solid #4f4f4f;
 }
-.showtimes {
+#showtimes {
   background: url("/images/dark_embroidery.png") repeat;
   display: table;
   padding-bottom: 90px;
@@ -196,7 +243,7 @@ button {
   transition: background 500ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
 }
 button:hover {
-  background: $darker_orange;
+  background: #f06f06;
 }
 .cta {
   text-align: center;
@@ -208,14 +255,6 @@ button:hover {
   color: #fff;
   font-size: 1rem;
   text-decoration: none;
-}
-/* Infinite photo banner from: http://designshack.net/articles/css/infinitephotobanner */
-.photo-banner {
-  height: 233px;
-  width: 3900px;
-}
-.photo-banner img:first-child {
-  animation: bannermove 40s linear infinite;
 }
 footer {
   background: #f89100;
@@ -275,7 +314,7 @@ footer {
   }
 
   100% {
-    margin-left: -2410px;
+    margin-left: -3850px;
   }
 }
 @-webkit-keyframes bannermove {
@@ -284,7 +323,7 @@ footer {
   }
 
   100% {
-    margin-left: -2410px;
+    margin-left: -3850px;
   }
 }
 @-o-keyframes bannermove {
@@ -293,7 +332,7 @@ footer {
   }
 
   100% {
-    margin-left: -2410px;
+    margin-left: -3850px;
   }
 }
 @-ms-keyframes bannermove {
@@ -302,7 +341,7 @@ footer {
   }
 
   100% {
-    margin-left: -2410px;
+    margin-left: -3850px;
   }
 }
 @keyframes bannermove {
@@ -311,6 +350,6 @@ footer {
   }
 
   100% {
-    margin-left: -2410px;
+    margin-left: -3850px;
   }
 }

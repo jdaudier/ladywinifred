@@ -11,18 +11,18 @@ block svg
                 path(d='M4.4.4h20.8c2 0 3.6 1.5 3.6 3.6v20.8c0 2.1-1.6 3.6-3.6 3.6H4.4c-2 0-3.6-1.5-3.6-3.6V4C.8 1.8 2.4.4 4.4.4zm16.8 3.1c-.7 0-1.3.6-1.3 1.3v3c0 .7.6 1.3 1.3 1.3h3.2c.7 0 1.3-.6 1.3-1.3v-3c0-.7-.6-1.3-1.3-1.3h-3.2zm4.4 8.7h-2.5c.2.8.4 1.6.4 2.4 0 4.7-3.9 8.4-8.7 8.4-4.8 0-8.7-3.8-8.7-8.4 0-.8.1-1.6.4-2.4H3.9V24c0 .6.5 1.1 1.1 1.1h19.5c.6 0 1.1-.5 1.1-1.1V12.2zM14.8 8.9c-3.1 0-5.6 2.4-5.6 5.4 0 3 2.5 5.4 5.6 5.4 3.1 0 5.6-2.4 5.6-5.4 0-3-2.5-5.4-5.6-5.4z')
 
 block content
-    header
+    header#top
         .wrapper
             nav
                 span
-                    a(href="#") news
+                    a(href="#news") news
                 span
-                    a(href="#") VIP
+                    a(href="/vip") VIP
                 a(href="#")
                     span.logo
                         img(src='/images/logo-orange.svg', alt="The Lady Winifred and Didi Show logo")
                 span
-                    a(href="#") showtimes
+                    a(href="#showtimes") showtimes
                 span
                     a(href="mailto:deweychaffee@gmail.com") contact
 
@@ -41,13 +41,17 @@ block content
                 img(src="/images/photos/didi-glamour-shot.jpg", alt="")
                 img(src="/images/photos/club.jpg", alt="")
                 img(src="/images/photos/didi-in-black.jpg", alt="")
+                img(src="/images/photos/poster.jpg", alt="")
+                img(src="/images/photos/didi.jpg", alt="")
+                img(src="/images/photos/makeuptips.jpg", alt="")
+                img(src="/images/photos/pizza-joint.jpg", alt="")
         .animated-divider
         .wrapper
             .hero
                 span.video
                     iframe(width='640', height='360', src='https://www.youtube.com/embed/ds42gPW0exQ?rel=0&amp;showinfo=0', frameborder='0', allowfullscreen)
                 span.description A foul-mouthed force. Like seeing Martin and Lewis if Dean was a sexy, seven foot torch singer and Jerry a stroke survivor. Quick-witted improv. Merrily musical. Racially offensive. Totally tasteless.
-        .news
+        #news
             .wrapper
                 .news-bubble-col
                     .news-bubble "We're heading to the New York International Fringe Festival in August! It would be great to see all your happy faces in the audience for our opening night performance (and the after party) on August 15th @ 8:15pm."
@@ -56,7 +60,7 @@ block content
                 .news-photo-col
                     .news-photo
                         img(src='/images/photos/winifred.jpg', alt="Lady Winifred")
-        .showtimes
+        #showtimes
             .wrapper
                 .showtimes-poster
                     img(src='/images/photos/nyc-fringe-poster.jpg', alt="Lady Winifred Fringe Poster")
@@ -92,3 +96,6 @@ block content
                 span &hearts;
                 | by
                 a.link(href="http://www.codepalette.com", target="_blank") Code Palette
+
+    a(href="#top", class="top")
+        span.hidden-visually Top
