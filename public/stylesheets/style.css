@@ -248,6 +248,9 @@ button:hover {
 .cta {
   text-align: center;
 }
+.cta a {
+  display: inline-block;
+}
 .cta-comps {
   text-align: center;
 }
