@@ -127,10 +127,21 @@ iframe
   font-size 1.82rem
   line-height 1.85
   margin-right 50px
-  padding 40px
+  padding 40px 40px 40px 74px
   position relative
   width 580px
   vertical-align middle
+
+  &:before
+    content '\201C'
+    font-family Georgia, serif
+    position absolute
+    opacity .25
+    top 25px
+    left 8px
+    font-size 145px
+    line-height 1
+    color white
 
 .news-signature
   font-family "Rochester", cursive
@@ -159,7 +170,7 @@ iframe
 
   img
     border-radius 50%
-    border 6px solid $emperor
+    border 7px solid $emperor
 
 #showtimes
   background url("/images/dark_embroidery.png") repeat
