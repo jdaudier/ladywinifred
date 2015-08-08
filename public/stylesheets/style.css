@@ -12,7 +12,7 @@
   opacity: 0;
   transition: opacity 0.3s 0s, visibility 0s 0.3s;
 }
-.top.is-visible /* the button becomes visible */ {
+.top.is-visible {
   transition: opacity 0.3s 0s, visibility 0s 0s;
   visibility: visible;
   opacity: 1;
@@ -315,7 +315,6 @@ footer {
   0% {
     margin-left: 0;
   }
-
   100% {
     margin-left: -3850px;
   }
@@ -324,7 +323,6 @@ footer {
   0% {
     margin-left: 0;
   }
-
   100% {
     margin-left: -3850px;
   }
@@ -333,16 +331,6 @@ footer {
   0% {
     margin-left: 0;
   }
-
-  100% {
-    margin-left: -3850px;
-  }
-}
-@-ms-keyframes bannermove {
-  0% {
-    margin-left: 0;
-  }
-
   100% {
     margin-left: -3850px;
   }
@@ -351,7 +339,6 @@ footer {
   0% {
     margin-left: 0;
   }
-
   100% {
     margin-left: -3850px;
   }
