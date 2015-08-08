@@ -56,16 +56,30 @@ body {
 }
 header {
   background: url("/images/dark_embroidery.png") repeat;
-  padding-bottom: 60px;
-  padding-top: 60px;
 }
-.wrapper {
-  margin: 0 auto;
-  width: 1044px;
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    margin: 0 auto;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    width: 1024px;
+  }
 }
-@media screen and (min-width: 0) and (max-width: 1044px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .wrapper {
     padding: 50px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .wrapper {
+    padding: 30px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 599px) {
+  .wrapper {
+    padding: 15px;
     width: 100%;
   }
 }
@@ -120,14 +134,31 @@ main {
 .hero {
   display: table;
 }
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .hero {
+    display: block;
+  }
+}
 .video,
 .description {
   display: table-cell;
-  padding: 60px 0;
+}
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .video,
+  .description {
+    display: block;
+  }
 }
 .video {
   text-align: center;
   width: 640px;
+}
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .video {
+    width: auto;
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
 }
 iframe {
   border-radius: 6px;
@@ -139,19 +170,34 @@ iframe {
   padding-left: 50px;
   vertical-align: middle;
 }
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .description {
+    padding: 0 20px;
+  }
+}
 #news {
   background: #dcdcdc;
   display: table;
-  padding-bottom: 60px;
-  padding-top: 60px;
   width: 100%;
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  #news {
+    display: block;
+  }
 }
 .news-bubble-col,
 .news-photo-col {
   display: table-cell;
 }
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .news-bubble-col,
+  .news-photo-col {
+    display: block;
+  }
+}
 .news-bubble-col {
   vertical-align: middle;
+  width: 60%;
 }
 .news-bubble {
   background: #666;
@@ -162,8 +208,13 @@ iframe {
   margin-right: 50px;
   padding: 40px 40px 40px 74px;
   position: relative;
-  width: 580px;
   vertical-align: middle;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .news-bubble {
+    font-size: 1.5rem;
+    padding: 20px 20px 20px 45px;
+  }
 }
 .news-bubble:before {
   content: '\201C';
@@ -176,10 +227,21 @@ iframe {
   line-height: 1;
   color: #fff;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .news-bubble:before {
+    font-size: 90px;
+    top: 10px;
+  }
+}
 .news-signature {
   font-family: "Rochester", cursive;
   font-size: 2.5rem;
   text-align: right;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .news-signature {
+    font-size: 1.6rem;
+  }
 }
 .news-bubble-triangle {
   width: 0;
@@ -193,48 +255,81 @@ iframe {
 }
 .news-photo-col {
   vertical-align: middle;
-  width: 640px;
 }
 .news-photo {
   border-radius: 50%;
   height: 406px;
   margin: 0 auto;
-  width: 406px;
 }
 .news-photo img {
   border-radius: 50%;
   border: 7px solid #4f4f4f;
+  width: 100%;
 }
 #showtimes {
   background: url("/images/dark_embroidery.png") repeat;
   display: table;
-  padding-bottom: 90px;
-  padding-top: 90px;
   width: 100%;
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  #showtimes {
+    display: block;
+  }
 }
 .showtimes-poster,
 .showtimes-schedule {
   display: table-cell;
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .showtimes-poster,
+  .showtimes-schedule {
+    display: block;
+  }
 }
 .showtimes-poster {
   text-align: center;
   transform: rotate(-6deg);
   width: 630px;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .showtimes-poster {
+    width: 55%;
+  }
+}
 .showtimes-poster img {
   border-radius: 6px;
   border: 6px solid #fff;
+  display: inline-block;
+  position: relative;
+  left: -25px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .showtimes-poster img {
+    left: -7px;
+    width: 80%;
+  }
 }
 .showtimes-schedule {
   color: #fff;
   font-size: 2.6rem;
   vertical-align: middle;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .showtimes-schedule {
+    font-size: 1.77rem;
+    padding-left: 8%;
+  }
+}
 .showtimes-venue {
   font-size: 3.2rem;
   margin-bottom: 10px;
   margin-top: 0;
   text-transform: uppercase;
+}
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .showtimes-venue {
+    font-size: 2.2rem;
+  }
 }
 .showtimes-listing {
   margin-top: 15px;
@@ -253,6 +348,12 @@ button {
   padding: 15px 60px;
   transition: background 500ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  button {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
 button:hover {
   background: #f06f06;
 }
@@ -268,11 +369,18 @@ button:hover {
 .cta-comps a {
   color: #fff;
   font-size: 1rem;
+  padding-bottom: 4px;
   text-decoration: none;
+  transition: border-bottom 500ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+}
+.cta-comps a:hover {
+  border-bottom: 2px solid #f89100;
 }
 footer {
   background: #f89100;
   flex: none;
+}
+footer .wrapper {
   padding-bottom: 15px;
   padding-top: 15px;
 }
@@ -303,7 +411,7 @@ footer {
 }
 .credit {
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 0.28px;
   text-align: center;
 }
