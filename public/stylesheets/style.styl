@@ -28,16 +28,12 @@ header
     padding-top 70px
     width 1024px
 
-  @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
+  @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_l_end)
     padding 50px
     width 100%
 
-  @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_p_end)
-    padding 30px
-    width 100%
-
   @media screen and (min-width: 0) and (max-width: $mobile_end)
-    padding 15px
+    padding 40px 20px
     width 100%
   
 nav
@@ -142,10 +138,14 @@ iframe
 
   @media screen and (min-width: 0) and (max-width: $tablet_p_end)
     display block
+    width 100%
 
 .news-bubble-col
   vertical-align middle
   width 60%
+
+  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    width 100%
 
 .news-bubble
   background $dove_gray
@@ -161,6 +161,9 @@ iframe
   @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
     font-size 1.5rem
     padding 20px 20px 20px 45px
+
+  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    margin-right 0
 
   &:before
     content '\201C'
@@ -195,18 +198,30 @@ iframe
   top 70px
   right -45px
 
+  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    display none
+
 .news-photo-col
   vertical-align middle
+
+  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    width 100%
 
 .news-photo
   border-radius 50%
   height 406px
   margin 0 auto
 
+  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    height auto
+
   img
     border-radius 50%
     border 7px solid $emperor
     width 100%
+
+    @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+      width 60%
 
 #showtimes
   background url("/images/dark_embroidery.png") repeat
@@ -230,6 +245,11 @@ iframe
   @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
     width 55%
 
+  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    padding-bottom 50px
+    padding-top 25px
+    width 100%
+
   img
     border-radius 6px
     border 6px solid white
@@ -250,17 +270,29 @@ iframe
     font-size 1.77rem
     padding-left 8%
 
+  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    margin 0 auto
+    text-align center
+
 .showtimes-venue
   font-size 3.2rem
   margin-bottom 10px
   margin-top 0
   text-transform uppercase
 
-  @media screen and (min-width: 0) and (max-width: $tablet_l_end)
+  @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
     font-size 2.2rem
+
+  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    font-size 3rem
+    text-align center
 
 .showtimes-listing
   margin-top 15px
+  padding-left 0
+
+  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    list-style-position inside
 
   li
     font-weight 400

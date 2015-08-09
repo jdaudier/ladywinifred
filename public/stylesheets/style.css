@@ -65,21 +65,15 @@ header {
     width: 1024px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .wrapper {
     padding: 50px;
     width: 100%;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  .wrapper {
-    padding: 30px;
-    width: 100%;
-  }
-}
 @media screen and (min-width: 0) and (max-width: 599px) {
   .wrapper {
-    padding: 15px;
+    padding: 40px 20px;
     width: 100%;
   }
 }
@@ -193,11 +187,17 @@ iframe {
   .news-bubble-col,
   .news-photo-col {
     display: block;
+    width: 100%;
   }
 }
 .news-bubble-col {
   vertical-align: middle;
   width: 60%;
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .news-bubble-col {
+    width: 100%;
+  }
 }
 .news-bubble {
   background: #666;
@@ -214,6 +214,11 @@ iframe {
   .news-bubble {
     font-size: 1.5rem;
     padding: 20px 20px 20px 45px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .news-bubble {
+    margin-right: 0;
   }
 }
 .news-bubble:before {
@@ -253,18 +258,38 @@ iframe {
   top: 70px;
   right: -45px;
 }
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .news-bubble-triangle {
+    display: none;
+  }
+}
 .news-photo-col {
   vertical-align: middle;
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .news-photo-col {
+    width: 100%;
+  }
 }
 .news-photo {
   border-radius: 50%;
   height: 406px;
   margin: 0 auto;
 }
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .news-photo {
+    height: auto;
+  }
+}
 .news-photo img {
   border-radius: 50%;
   border: 7px solid #4f4f4f;
   width: 100%;
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .news-photo img {
+    width: 60%;
+  }
 }
 #showtimes {
   background: url("/images/dark_embroidery.png") repeat;
@@ -296,6 +321,13 @@ iframe {
     width: 55%;
   }
 }
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .showtimes-poster {
+    padding-bottom: 50px;
+    padding-top: 25px;
+    width: 100%;
+  }
+}
 .showtimes-poster img {
   border-radius: 6px;
   border: 6px solid #fff;
@@ -320,19 +352,37 @@ iframe {
     padding-left: 8%;
   }
 }
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .showtimes-schedule {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 .showtimes-venue {
   font-size: 3.2rem;
   margin-bottom: 10px;
   margin-top: 0;
   text-transform: uppercase;
 }
-@media screen and (min-width: 0) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .showtimes-venue {
     font-size: 2.2rem;
   }
 }
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .showtimes-venue {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
 .showtimes-listing {
   margin-top: 15px;
+  padding-left: 0;
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .showtimes-listing {
+    list-style-position: inside;
+  }
 }
 .showtimes-listing li {
   font-weight: 400;
