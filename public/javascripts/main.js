@@ -41,4 +41,6 @@ $(function() {
 			$backToTopBtn.removeClass('is-visible');
 		}
 	});
+
+	$('.video').fitVids();
 });

@@ -36,6 +36,10 @@ header
     padding 40px 20px
     width 100%
 
+    &.has-video
+        padding-left 0
+        padding-right 0
+
 nav
   align-items center
   flex-direction row
@@ -91,43 +95,31 @@ main
 /* END OF PHOTO BANNER
 ----------------------------------------------------- */
 
-.hero
-  display table
-
-  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
-    display block
-
-.video, .description
-  display table-cell
-
-  @media screen and (min-width: 0) and (max-width: $tablet_l_end)
-    display block
-
 .video
   text-align center
-  width 640px
-
-  @media screen and (min-width: 0) and (max-width: $tablet_l_end)
-    width auto
-    padding-bottom 30px
-    padding-top 0
 
 iframe
   border-radius 6px
 
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+      border-radius 0
+
 .description
   color $dove_gray
-  font-size 1.8rem
+  font-size 2.1rem
   line-height 1.85
-  padding-left 50px
+  margin-top 40px
+  text-align center
   vertical-align middle
 
-  @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_l_end)
-    padding 0 20px
+  @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_p_end)
+    font-size 1.7rem
 
   @media screen and (min-width: 0) and (max-width: $mobile_end)
     font-size 1.5rem
-    padding-left 0
+    margin-top 30px
+    padding-left 20px
+    padding-right 20px
 
 #news
   background $light_gray

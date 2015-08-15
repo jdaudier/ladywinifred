@@ -75,6 +75,33 @@ gulp.task('styles', function() {
 		.pipe($.size({title: 'styles'}));
 });
 
+// Concatenate & minify vendor JavaScript
+gulp.task('vendor-scripts', function () {
+    util.log(util.colors.bgGreen.bold('Concatenate & minify vendor JS'));
+
+    return gulp.src([
+        './node_modules/velocity-animate/velocity.min.js',
+        './public/javascripts/vendor/**/*.js'
+    ])
+        .pipe($.sourcemaps.init())
+        .pipe($.concat('vendor.min.js'))
+        .pipe(uglify({
+            mangle: true,
+            compress: {
+                sequences: true,
+                dead_code: true,
+                conditionals: true,
+                booleans: true,
+                unused: true,
+                if_return: true,
+                join_vars: true
+            }
+        }).on('error', util.log))
+        .pipe($.sourcemaps.write('.'))
+        .pipe(gulp.dest('public/javascripts'))
+        .pipe($.size({title: 'vendor scripts'}));
+});
+
 // Concatenate & minify our JavaScript: http://davidwalsh.name/compress-uglify
 gulp.task('scripts', ['lint-src'], function() {
 	util.log(util.colors.bgCyan.bold('Concatenate & minify our JS'));
@@ -157,7 +184,7 @@ gulp.task('lint-src', function() {
 });
 
 gulp.task('development', function(cb) {
-	runSequence(['vendor-styles', 'styles', 'scripts'], cb);
+	runSequence(['vendor-styles', 'styles', 'vendor-scripts', 'scripts'], cb);
 });
 
 gulp.task('default', ['development']);
