@@ -248,7 +248,7 @@ iframe
 .showtimes-poster, .showtimes-schedule
   display table-cell
 
-  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
     display block
 
 .showtimes-poster
@@ -256,10 +256,10 @@ iframe
   transform rotate(-6deg)
   width 630px
 
-  @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
+  @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_l_end)
     width 55%
 
-  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
     padding-bottom 50px
     padding-top 25px
     width 100%
@@ -267,26 +267,36 @@ iframe
   img
     border-radius 6px
     border 6px solid white
-    display inline-block
+    display block
+    margin 0 auto
     position relative
-    left -25px
 
-    @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
+    @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_l_end)
       left -7px
       width 80%
 
+    @media screen and (min-width: 0) and (max-width: $mobile_end)
+      width 90%
+
 .showtimes-schedule
   color white
-  font-size 2.6rem
+  font-size 2.5rem
+  text-align center
   vertical-align middle
 
   @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
     font-size 1.77rem
     padding-left 8%
 
-  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+  @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_p_end)
+    font-size 1.4rem
+    padding-left 3%
+
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+    font-size 2.1rem
     margin 0 auto
-    text-align center
+    padding-left 0
+    width 100%
 
 .showtimes-venue
   font-size 3.2rem
@@ -297,20 +307,30 @@ iframe
   @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
     font-size 2.2rem
 
-  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
-    font-size 3rem
+  @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_p_end)
+    font-size 1.9rem
+
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+    font-size 2.4rem
     text-align center
 
 .showtimes-listing
+  list-style-position inside
   margin-top 15px
   padding-left 0
 
-  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
-    list-style-position inside
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+    list-style-type none
 
   li
     font-weight 400
     margin-top 15px
+
+.cta
+    text-align center
+
+    a
+        display block
 
 button
   background $orange
@@ -326,24 +346,31 @@ button
     padding-right 45px
     padding-left 45px
 
+  @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_p_end)
+    padding-right 40px
+    padding-left 40px
+
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+    padding-right 0
+    padding-left 0
+    width 100%
+
   &:hover
     background $dark_orange
-
-.cta
-  text-align center
-
-  a
-    display inline-block
 
 .cta-comps
   text-align center
 
   a
     color white
+    display inline-block
     font-size 1rem
     padding-bottom 4px
     text-decoration none
     transition border-bottom 500ms cubic-bezier(.19,1,.22,1) 0ms
+
+    @media screen and (min-width: 0) and (max-width: $mobile_end)
+      margin-top 30px
 
     &:hover
       border-bottom 2px solid $orange
