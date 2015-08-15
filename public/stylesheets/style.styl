@@ -35,7 +35,7 @@ header
   @media screen and (min-width: 0) and (max-width: $mobile_end)
     padding 40px 20px
     width 100%
-  
+
 nav
   align-items center
   flex-direction row
@@ -163,6 +163,9 @@ iframe
     padding 20px 20px 20px 45px
 
   @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    font-size 1.5rem
+    padding 20px 20px 20px 45px
+    margin-bottom 50px
     margin-right 0
 
   &:before
@@ -180,6 +183,10 @@ iframe
       font-size 90px
       top 10px
 
+    @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+      font-size 94px
+      top 14px
+
 .news-signature
   font-family "Rochester", cursive
   font-size 2.5rem
@@ -187,6 +194,10 @@ iframe
 
   @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
     font-size 1.6rem
+
+  @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+    font-size 1.8rem
+    margin-top 11px
 
 .news-bubble-triangle
   width 0
@@ -196,20 +207,22 @@ iframe
   border-color transparent transparent transparent $dove_gray
   position absolute
   top 70px
-  right -45px
+  right -43px
 
   @media screen and (min-width: 0) and (max-width: $tablet_p_end)
-    display none
+      border-color $dove_gray transparent transparent transparent
+      border-width 45px 20px 0 20px
+      top 99%
+      right 30%
 
 .news-photo-col
-  vertical-align middle
+  vertical-align top
 
   @media screen and (min-width: 0) and (max-width: $tablet_p_end)
     width 100%
 
 .news-photo
   border-radius 50%
-  height 406px
   margin 0 auto
 
   @media screen and (min-width: 0) and (max-width: $tablet_p_end)
@@ -221,6 +234,8 @@ iframe
     width 100%
 
     @media screen and (min-width: 0) and (max-width: $tablet_p_end)
+      display block
+      margin 0 auto
       width 60%
 
 #showtimes
