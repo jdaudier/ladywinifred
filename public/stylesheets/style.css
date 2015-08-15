@@ -35,7 +35,8 @@
   position: absolute;
   width: 1px;
 }
-.vip-page .logo:hover {
+.vip-page .logo:hover,
+.vip-page .logo:focus {
   background: url("/images/logo-white.svg") no-repeat center bottom;
 }
 .vip-page .logo a {
