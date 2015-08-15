@@ -9,42 +9,42 @@ block svg
             symbol#instagram(viewbox='0 0 29.2 29.1')
                 path(d='M4.4.4h20.8c2 0 3.6 1.5 3.6 3.6v20.8c0 2.1-1.6 3.6-3.6 3.6H4.4c-2 0-3.6-1.5-3.6-3.6V4C.8 1.8 2.4.4 4.4.4zm16.8 3.1c-.7 0-1.3.6-1.3 1.3v3c0 .7.6 1.3 1.3 1.3h3.2c.7 0 1.3-.6 1.3-1.3v-3c0-.7-.6-1.3-1.3-1.3h-3.2zm4.4 8.7h-2.5c.2.8.4 1.6.4 2.4 0 4.7-3.9 8.4-8.7 8.4-4.8 0-8.7-3.8-8.7-8.4 0-.8.1-1.6.4-2.4H3.9V24c0 .6.5 1.1 1.1 1.1h19.5c.6 0 1.1-.5 1.1-1.1V12.2zM14.8 8.9c-3.1 0-5.6 2.4-5.6 5.4 0 3 2.5 5.4 5.6 5.4 3.1 0 5.6-2.4 5.6-5.4 0-3-2.5-5.4-5.6-5.4z')
 block content
-    header#top
-        .wrapper
-            nav
-                span
-                    a(href="#news") news
-                span
-                    a(href="#goodies") goodies
-                span.logo
-                    a(href="/")
-                        img(src='/images/logo-orange.svg', alt="The Lady Winifred and Didi Show logo")
-                span
-                    a(href="#showtimes") showtimes
-                span
-                    a(href="mailto:deweychaffee@gmail.com") contact
+    .vip-page
+        header#top
+            .wrapper
+                nav
+                    span
+                        a(href="#news") news
+                    span
+                        a(href="#goodies") goodies
+                    span.logo
+                        a(href="/")
+                    span
+                        a(href="#showtimes") showtimes
+                    span
+                        a(href="mailto:deweychaffee@gmail.com") contact
 
-    main
-        img.coming-soon(src="/images/photos/makeuptips-vip.jpg", alt="Coming soon")
+        main
+            img.coming-soon(src="/images/photos/makeuptips-vip.jpg", alt="Coming soon")
 
-    footer
-        .wrapper
-            ul.social-links
-                li
-                    a.facebook(href='https://www.facebook.com/theladywinifredanddidishow', target='_blank')
-                        svg.icon.facebook
-                            use(xlink:href='#facebook')
-                li
-                    a.twitter(href='https://twitter.com/WinifredandDidi', target='_blank')
-                        svg.icon.twitter
-                            use(xlink:href='#twitter')
-                li
-                    a.instagram(href='https://instagram.com/ladywinifredanddidi', target='_blank')
-                        svg.icon.instagram
-                            use(xlink:href='#instagram')
-            .credit Made with
-                span &hearts;
-                | by
-                a.link(href="http://www.codepalette.com", target="_blank") Code Palette
-    a(href="#top", class="top")
-        span.hidden-visually Top
+        footer
+            .wrapper
+                ul.social-links
+                    li
+                        a.facebook(href='https://www.facebook.com/theladywinifredanddidishow', target='_blank')
+                            svg.icon.facebook
+                                use(xlink:href='#facebook')
+                    li
+                        a.twitter(href='https://twitter.com/WinifredandDidi', target='_blank')
+                            svg.icon.twitter
+                                use(xlink:href='#twitter')
+                    li
+                        a.instagram(href='https://instagram.com/ladywinifredanddidi', target='_blank')
+                            svg.icon.instagram
+                                use(xlink:href='#instagram')
+                .credit Made with
+                    span &hearts;
+                    | by
+                    a.link(href="http://www.codepalette.com", target="_blank") Code Palette
+        a(href="#top", class="top")
+            span.hidden-visually Top

@@ -35,7 +35,14 @@
   position: absolute;
   width: 1px;
 }
-.coming-soon {
+.vip-page .logo:hover {
+  background: url("/images/logo-white.svg") no-repeat center bottom;
+}
+.vip-page .logo a {
+  display: block;
+  height: 100%;
+}
+.vip-page .coming-soon {
   width: 100%;
 }
 html {
@@ -122,12 +129,27 @@ nav span {
   }
 }
 .logo {
+  background: url("/images/logo-orange.svg") no-repeat center bottom;
   display: inline-block;
+  height: 220px;
   width: 35%;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .logo {
+    height: 165px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .logo {
+    height: 125px;
+  }
 }
 @media screen and (min-width: 0) and (max-width: 599px) {
   .logo {
-    width: 75%;
+    background-position: center center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 100%;
   }
 }
 .animated-divider {
