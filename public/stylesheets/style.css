@@ -99,12 +99,33 @@ nav a:hover {
 nav span {
   display: inline-block;
   font-size: 1.5rem;
+  padding-bottom: 15px;
   text-transform: uppercase;
-  width: 16%;
+  width: 16.25%;
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  nav span {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 599px) {
+  nav span {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  nav span:last-child {
+    padding-bottom: 0;
+  }
 }
 .logo {
   display: inline-block;
-  width: 350px;
+  width: 35%;
+}
+@media screen and (min-width: 0) and (max-width: 599px) {
+  .logo {
+    width: 75%;
+  }
 }
 .animated-divider {
   border-bottom: 7px solid;
@@ -335,7 +356,7 @@ iframe {
   .showtimes-poster {
     padding-bottom: 50px;
     padding-top: 25px;
-    width: 100%;
+    width: 95%;
   }
 }
 .showtimes-poster img {

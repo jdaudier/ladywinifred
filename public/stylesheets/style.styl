@@ -58,12 +58,27 @@ nav
   span
     display inline-block
     font-size 1.5rem
+    padding-bottom 15px
     text-transform uppercase
-    width 16%
+    width 16.25%
+
+    @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_p_end)
+      font-size 1rem
+
+    @media screen and (min-width: 0) and (max-width: $mobile_end)
+      display block
+      text-align center
+      width 100%
+
+      &:last-child
+        padding-bottom 0
 
 .logo
   display inline-block
-  width 350px
+  width 35%
+
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+    width 75%
 
 .animated-divider
   border-bottom 7px solid
@@ -258,7 +273,7 @@ iframe
   @media screen and (min-width: 0) and (max-width: $mobile_end)
     padding-bottom 50px
     padding-top 25px
-    width 100%
+    width 95%
 
   img
     border-radius 6px
