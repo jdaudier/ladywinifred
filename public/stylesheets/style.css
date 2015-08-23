@@ -168,7 +168,7 @@ main {
 /* INFINITE PHOTO BANNER: http://designshack.net/articles/css/infinitephotobanner
 ----------------------------------------------------- */
 .photo-banner {
-  width: 3850px;
+  width: 6650px;
 }
 .photo-banner img:first-child {
   animation: bannermove 30s linear infinite;
@@ -464,6 +464,9 @@ iframe {
   font-weight: 400;
   margin-top: 15px;
 }
+.showtimes-listing .past {
+  text-decoration: line-through;
+}
 .cta {
   text-align: center;
 }
@@ -580,7 +583,7 @@ footer .wrapper {
     margin-left: 0;
   }
   100% {
-    margin-left: -3850px;
+    margin-left: -6650px;
   }
 }
 @-webkit-keyframes bannermove {
@@ -588,7 +591,7 @@ footer .wrapper {
     margin-left: 0;
   }
   100% {
-    margin-left: -3850px;
+    margin-left: -6650px;
   }
 }
 @-o-keyframes bannermove {
@@ -596,7 +599,7 @@ footer .wrapper {
     margin-left: 0;
   }
   100% {
-    margin-left: -3850px;
+    margin-left: -6650px;
   }
 }
 @keyframes bannermove {
@@ -604,6 +607,6 @@ footer .wrapper {
     margin-left: 0;
   }
   100% {
-    margin-left: -3850px;
+    margin-left: -6650px;
   }
 }
