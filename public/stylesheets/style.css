@@ -168,7 +168,7 @@ main {
 /* INFINITE PHOTO BANNER: http://designshack.net/articles/css/infinitephotobanner
 ----------------------------------------------------- */
 .photo-banner {
-  width: 9800px;
+  width: 10150px;
 }
 .photo-banner img:first-child {
   animation: bannermove 40s linear infinite;
@@ -587,7 +587,7 @@ footer .wrapper {
     margin-left: 0;
   }
   100% {
-    margin-left: -9800px;
+    margin-left: -10000px;
   }
 }
 @-webkit-keyframes bannermove {
@@ -595,7 +595,7 @@ footer .wrapper {
     margin-left: 0;
   }
   100% {
-    margin-left: -9800px;
+    margin-left: -10000px;
   }
 }
 @-o-keyframes bannermove {
@@ -603,7 +603,7 @@ footer .wrapper {
     margin-left: 0;
   }
   100% {
-    margin-left: -9800px;
+    margin-left: -10000px;
   }
 }
 @keyframes bannermove {
@@ -611,6 +611,6 @@ footer .wrapper {
     margin-left: 0;
   }
   100% {
-    margin-left: -9800px;
+    margin-left: -10000px;
   }
 }
