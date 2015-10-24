@@ -438,6 +438,16 @@ iframe {
   margin-top: 0;
   text-transform: uppercase;
 }
+.showtimes-venue a {
+  color: #fff;
+  display: inline-block;
+  margin-left: 12px;
+  text-decoration: none;
+  transition: border-bottom 500ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+}
+.showtimes-venue a:hover {
+  border-bottom: 2px solid #f89100;
+}
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .showtimes-venue {
     font-size: 2.2rem;
@@ -508,6 +518,10 @@ button {
 }
 button:hover {
   background: #f06f06;
+}
+.cta-note {
+  font-size: 1rem;
+  margin-top: 10px;
 }
 .cta-comps {
   text-align: center;
