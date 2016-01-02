@@ -35,16 +35,6 @@
   position: absolute;
   width: 1px;
 }
-.vip-page .logo:hover {
-  background: url("/images/logo-white.svg") no-repeat center bottom;
-}
-.vip-page .logo a {
-  display: block;
-  height: 100%;
-}
-.vip-page .coming-soon {
-  width: 100%;
-}
 html {
   box-sizing: border-box;
   font-size: 16px;
