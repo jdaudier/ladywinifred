@@ -4,7 +4,7 @@ $(function() {
 	// Animated dividers
 	$('.animated-divider').velocity({
 		width: '100%',
-		borderColor: '#f89100'
+		borderColor: '#ee6aa6'
 	}, {
 		duration: 3000
 	});

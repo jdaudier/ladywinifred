@@ -21,6 +21,10 @@ body
 header
   background url("/images/dark_embroidery.png") repeat
 
+  .wrapper
+    padding-bottom 35px
+    padding-top 35px
+
 .wrapper
   @media screen and (min-width: $desktop_start)
     margin 0 auto
@@ -49,7 +53,7 @@ nav
   width 100%
 
   a
-    color $orange
+    color $brilliant_rose
     text-decoration none
 
     &:hover
@@ -63,7 +67,8 @@ nav
     width 16.25%
 
     @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_p_end)
-      font-size 1rem
+      font-size 1.2rem
+      width 17.5%
 
     @media screen and (min-width: 0) and (max-width: $mobile_end)
       display block
@@ -74,22 +79,21 @@ nav
         padding-bottom 0
 
 .logo
-  background url('/images/logo-orange.svg') no-repeat center bottom
-  display inline-block
-  height 220px
-  width 35%
-
-  @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
-    height 165px
+  width 25%
 
   @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_p_end)
-    height 125px
+    width 30%
 
   @media screen and (min-width: 0) and (max-width: $mobile_end)
-    background-position center center
-    margin-bottom 15px
-    margin-top 15px
+    height 350px
     width 100%
+
+  img
+    width 100%
+
+    @media screen and (min-width: 0) and (max-width: $mobile_end)
+      height 100%
+      width auto
 
 .animated-divider
   border-bottom 7px solid
@@ -174,7 +178,7 @@ iframe
     width 100%
 
 .news-bubble
-  background $dove_gray
+  background $purple
   border-radius 6px
   color white
   font-size 1.82rem
@@ -229,13 +233,13 @@ iframe
   height 0
   border-style solid
   border-width 20px 0 20px 45px
-  border-color transparent transparent transparent $dove_gray
+  border-color transparent transparent transparent $purple
   position absolute
   top 70px
   right -43px
 
   @media screen and (min-width: 0) and (max-width: $tablet_p_end)
-      border-color $dove_gray transparent transparent transparent
+      border-color $purple transparent transparent transparent
       border-width 45px 20px 0 20px
       top 99%
       right 30%
@@ -255,13 +259,95 @@ iframe
 
   img
     border-radius 50%
-    border 7px solid $emperor
+    border 7px solid $purple
     width 100%
 
     @media screen and (min-width: 0) and (max-width: $tablet_p_end)
       display block
       margin 0 auto
       width 60%
+
+/* PERISCOPE
+----------------------------------------------------- */
+
+.periscope-ad
+    text-decoration none
+
+    img
+        border-top-left-radius 6px
+        border-top-right-radius 6px
+        width 100%
+
+.periscope-schedule
+  color white
+  font-size 1.5rem
+  position relative
+  text-decoration none
+  top -8px
+
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+    text-align center
+
+.periscope-day
+  display table
+  height 100px
+  transition color 500ms cubic-bezier(.19,1,.22,1) 0ms
+  width 100%
+
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+    height auto
+
+  &:nth-child(odd)
+    background-color $light_gray
+    color $dove_gray
+
+    &:hover
+      background-color $med_gray
+
+  &:nth-child(even)
+    background-color $violet_red
+
+    &:hover
+      background-color $brilliant_rose
+
+  &:last-child
+    border-bottom-left-radius 6px
+    border-bottom-right-radius 6px
+
+.periscope-time
+  display table-cell
+  padding-left 25px
+  padding-right 25px
+  vertical-align middle
+  width 40%
+
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+    display block
+    padding-bottom 20px
+    padding-top 25px
+    width 100%
+
+.periscope-description
+  display table-cell
+  padding-left 25px
+  padding-right 25px
+  vertical-align middle
+  width 60%
+
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+    display block
+    padding-bottom 25px
+    width 100%
+
+.periscope-detail
+  text-transform uppercase
+
+  &.small
+    font-size 1rem
+
+
+/* TICKETS
+----------------------------------------------------- */
 
 #tickets
   background url("/images/dark_embroidery.png") repeat
@@ -338,7 +424,7 @@ iframe
     transition border-bottom 500ms cubic-bezier(.19,1,.22,1) 0ms
 
     &:hover
-      border-bottom 2px solid $orange
+      border-bottom 2px solid $brilliant_rose
 
   @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
     font-size 2.2rem
@@ -372,7 +458,7 @@ iframe
         display block
 
 button
-  background $orange
+  background-color $violet_red
   border-radius 6px
   border none
   color white
@@ -395,7 +481,7 @@ button
     width 100%
 
   &:hover
-    background $dark_orange
+    background $brilliant_rose
 
 .cta-note
   font-size 1rem
@@ -416,10 +502,10 @@ button
       margin-top 30px
 
     &:hover
-      border-bottom 2px solid $orange
+      border-bottom 2px solid $brilliant_rose
 
 footer
-  background $orange
+  background $violet_red
   flex none
 
   .wrapper
@@ -458,7 +544,7 @@ footer
   text-align center
 
   span
-    color $scarlet
+    color rgba($med_gray, .8)
     font-size 1.2rem
     margin-right 6px
     margin-left 6px
