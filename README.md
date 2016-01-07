@@ -6,7 +6,7 @@ The Lady Winifred and Didi Show
 ```
 npm i
 npm start
-open http://localhost:3000
+open http://localhost:8888
 ```
 
 ## To update the CSS
