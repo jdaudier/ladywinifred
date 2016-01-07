@@ -51,7 +51,7 @@ gulp.task('vendor-styles', function() {
 	return gulp.src([
 		'node_modules/normalize.css/normalize.css'
 	])
-		.pipe($.minifyCss())
+		.pipe($.cssnano())
 		.pipe($.rename('normalize.min.css'))
 		.pipe(gulp.dest('public/stylesheets'))
 		.pipe($.size({title: 'vendor styles'}));
@@ -68,7 +68,7 @@ gulp.task('styles', function() {
 	}))
 		.pipe($.sourcemaps.init())
 		.pipe($.autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
-		.pipe($.minifyCss())
+		.pipe($.cssnano())
 		.pipe($.sourcemaps.write('.'))
 		.pipe($.rename('style.min.css'))
 		.pipe(gulp.dest('public/stylesheets'))
