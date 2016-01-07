@@ -341,44 +341,44 @@ iframe {
     width: 60%;
   }
 }
-#showtimes {
+#tickets {
   background: url("/images/dark_embroidery.png") repeat;
   display: table;
   width: 100%;
 }
 @media screen and (min-width: 0) and (max-width: 768px) {
-  #showtimes {
+  #tickets {
     display: block;
   }
 }
-.showtimes-poster,
-.showtimes-schedule {
+.tickets-poster,
+.tickets-schedule {
   display: table-cell;
 }
 @media screen and (min-width: 0) and (max-width: 599px) {
-  .showtimes-poster,
-  .showtimes-schedule {
+  .tickets-poster,
+  .tickets-schedule {
     display: block;
   }
 }
-.showtimes-poster {
+.tickets-poster {
   text-align: center;
   transform: rotate(-6deg);
   width: 630px;
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  .showtimes-poster {
+  .tickets-poster {
     width: 55%;
   }
 }
 @media screen and (min-width: 0) and (max-width: 599px) {
-  .showtimes-poster {
+  .tickets-poster {
     padding-bottom: 50px;
     padding-top: 25px;
     width: 95%;
   }
 }
-.showtimes-poster img {
+.tickets-poster img {
   border-radius: 6px;
   border: 6px solid #fff;
   display: block;
@@ -386,89 +386,89 @@ iframe {
   position: relative;
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  .showtimes-poster img {
+  .tickets-poster img {
     left: -7px;
     width: 80%;
   }
 }
 @media screen and (min-width: 0) and (max-width: 599px) {
-  .showtimes-poster img {
+  .tickets-poster img {
     width: 90%;
   }
 }
-.showtimes-schedule {
+.tickets-schedule {
   color: #fff;
   font-size: 2.5rem;
   text-align: center;
   vertical-align: middle;
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .showtimes-schedule {
+  .tickets-schedule {
     font-size: 1.77rem;
     padding-left: 8%;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  .showtimes-schedule {
+  .tickets-schedule {
     font-size: 1.4rem;
     padding-left: 3%;
   }
 }
 @media screen and (min-width: 0) and (max-width: 599px) {
-  .showtimes-schedule {
+  .tickets-schedule {
     font-size: 2.1rem;
     margin: 0 auto;
     padding-left: 0;
     width: 100%;
   }
 }
-.showtimes-venue {
+.tickets-venue {
   font-size: 3.2rem;
   margin-bottom: 10px;
   margin-top: 0;
   text-transform: uppercase;
 }
-.showtimes-venue a {
+.tickets-venue a {
   color: #fff;
   display: inline-block;
   margin-left: 12px;
   text-decoration: none;
   transition: border-bottom 500ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
 }
-.showtimes-venue a:hover {
+.tickets-venue a:hover {
   border-bottom: 2px solid #f89100;
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .showtimes-venue {
+  .tickets-venue {
     font-size: 2.2rem;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  .showtimes-venue {
+  .tickets-venue {
     font-size: 1.9rem;
   }
 }
 @media screen and (min-width: 0) and (max-width: 599px) {
-  .showtimes-venue {
+  .tickets-venue {
     font-size: 2.4rem;
     text-align: center;
   }
 }
-.showtimes-listing {
+.tickets-listing {
   list-style-position: inside;
   margin-top: 15px;
   padding-left: 0;
 }
 @media screen and (min-width: 0) and (max-width: 599px) {
-  .showtimes-listing {
+  .tickets-listing {
     list-style-type: none;
   }
 }
-.showtimes-listing li {
+.tickets-listing li {
   font-weight: 400;
   margin-top: 15px;
 }
-.showtimes-listing .past {
+.tickets-listing .past {
   text-decoration: line-through;
 }
 .cta {
