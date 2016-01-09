@@ -94,7 +94,7 @@ nav {
   width: 100%;
 }
 nav a {
-  color: #ee6aa6;
+  color: #f288b7;
   text-decoration: none;
 }
 nav a:hover {
@@ -389,7 +389,7 @@ iframe {
   background-color: #fa439f;
 }
 .periscope-day:nth-child(even):hover {
-  background-color: #ee6aa6;
+  background-color: #f288b7;
 }
 .periscope-day:last-child {
   border-bottom-left-radius: 6px;
@@ -527,7 +527,7 @@ iframe {
   transition: border-bottom 500ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
 }
 .tickets-venue a:hover {
-  border-bottom: 2px solid #ee6aa6;
+  border-bottom: 2px solid #f288b7;
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .tickets-venue {
@@ -598,7 +598,7 @@ button {
   }
 }
 button:hover {
-  background: #ee6aa6;
+  background: #f288b7;
 }
 .cta-note {
   font-size: 1rem;
@@ -621,7 +621,7 @@ button:hover {
   }
 }
 .cta-comps a:hover {
-  border-bottom: 2px solid #ee6aa6;
+  border-bottom: 2px solid #f288b7;
 }
 footer {
   background: #fa439f;
