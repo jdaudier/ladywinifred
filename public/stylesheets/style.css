@@ -55,11 +55,12 @@ body {
   display: none;
 }
 header {
-  background: url("/images/dark_embroidery.png") repeat;
+/* To edit this gradient: http://colorzilla.com/gradient-editor/#b0abe3+0,8282be+0,46427f+50,8282be+100 */
+  background: linear-gradient(to right, #b0abe3 0%, #8282be 0%, #46427f 50%, #8282be 100%);
 }
 header .wrapper {
-  padding-bottom: 35px;
-  padding-top: 35px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 @media screen and (min-width: 1025px) {
   .wrapper {
