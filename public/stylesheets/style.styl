@@ -127,7 +127,34 @@ main
 ----------------------------------------------------- */
 
 .video
+  position relative
   text-align center
+
+.photo-credit
+  color $purple
+  font-size .7rem
+  letter-spacing 1.3px
+  position absolute
+  bottom 124px
+  right -161px
+  transform rotate(90deg);
+  transform-origin left top 0
+
+  @media screen and (min-width: 0) and (max-width: $mobile_end)
+    font-size .6rem
+    right 10px
+    top -22px
+    transform none
+
+  a
+    color $purple
+    text-decoration none
+    border-bottom 1px solid rgba(107, 103, 162, 0)
+    transition border 500ms ease
+
+    &:hover
+      border-bottom 1px solid rgba(107, 103, 162, 1)
+
 
 iframe
   border-radius 6px
@@ -365,6 +392,7 @@ iframe
     display block
 
 .tickets-poster
+  position relative
   text-align center
   transform rotate(-6deg)
   width 630px
@@ -376,6 +404,29 @@ iframe
     padding-bottom 50px
     padding-top 25px
     width 95%
+
+  .photo-credit
+    bottom -17px
+    color $med_gray
+    right 239px
+    transform none
+
+    @media screen and (min-width: $tablet_l_start) and (max-width: $tablet_l_end)
+      right 144px
+
+    @media screen and (min-width: $tablet_p_start) and (max-width: $tablet_p_end)
+      right 79px
+
+    @media screen and (min-width: 0) and (max-width: $mobile_end)
+      top 4px
+      right 28px
+
+    a
+      border-bottom 1px solid rgba(250, 67, 159, 0)
+      color $med_gray
+
+      &:hover
+        border-bottom 1px solid rgba(250, 67, 159, 1)
 
   img
     border-radius 6px
