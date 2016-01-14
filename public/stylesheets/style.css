@@ -155,21 +155,6 @@ nav span {
 main {
   flex: 1;
 }
-.photos {
-  height: 233px;
-  overflow: hidden;
-  width: 100%;
-}
-/* INFINITE PHOTO BANNER: http://designshack.net/articles/css/infinitephotobanner
------------------------------------------------------ */
-.photo-banner {
-  width: 10150px;
-}
-.photo-banner img:first-child {
-  animation: bannermove 40s linear infinite;
-}
-/* END OF PHOTO BANNER
------------------------------------------------------ */
 .video {
   position: relative;
   text-align: center;
@@ -740,36 +725,4 @@ footer .wrapper {
 }
 .credit .link:hover {
   color: #3c4651;
-}
-@-moz-keyframes bannermove {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -10000px;
-  }
-}
-@-webkit-keyframes bannermove {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -10000px;
-  }
-}
-@-o-keyframes bannermove {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -10000px;
-  }
-}
-@keyframes bannermove {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -10000px;
-  }
 }
