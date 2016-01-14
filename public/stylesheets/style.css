@@ -45,6 +45,8 @@ html {
   box-sizing: inherit;
 }
 body {
+/* To edit this gradient: http://colorzilla.com/gradient-editor/#b0abe3+0,8282be+0,46427f+50,8282be+100 */
+  background: linear-gradient(to right, #b0abe3 0%, #8282be 0%, #46427f 50%, #8282be 100%);
   display: flex;
   font-family: "Oswald", sans-serif;
   font-weight: 300;
@@ -148,7 +150,7 @@ nav span {
   }
 }
 .animated-divider {
-  border-bottom: 7px solid;
+  border-bottom: 14px solid;
   border-color: #fff;
   width: 0;
 }
@@ -160,7 +162,7 @@ main {
   text-align: center;
 }
 .photo-credit {
-  color: #6b67a2;
+  color: #dcdcdc;
   font-size: 0.7rem;
   letter-spacing: 1.3px;
   position: absolute;
@@ -178,15 +180,16 @@ main {
   }
 }
 .photo-credit a {
-  color: #6b67a2;
+  color: #dcdcdc;
   text-decoration: none;
-  border-bottom: 1px solid rgba(107,103,162,0);
+  border-bottom: 1px solid rgba(220,220,220,0);
   transition: border 500ms ease;
 }
 .photo-credit a:hover {
-  border-bottom: 1px solid #6b67a2;
+  border-bottom: 1px solid #dcdcdc;
 }
 iframe {
+  border: 7px solid #fff;
   border-radius: 6px;
 }
 @media screen and (min-width: 0) and (max-width: 599px) {
@@ -195,7 +198,7 @@ iframe {
   }
 }
 .description {
-  color: #666;
+  color: #fff;
   font-size: 2.1rem;
   line-height: 1.85;
   margin-top: 40px;
@@ -216,7 +219,6 @@ iframe {
   }
 }
 #news {
-  background: #dcdcdc;
   display: table;
   width: 100%;
 }
@@ -250,7 +252,7 @@ iframe {
   }
 }
 .news-bubble {
-  background: #6b67a2;
+  background: #fa439f;
   border-radius: 6px;
   color: #fff;
   font-size: 1.82rem;
@@ -317,14 +319,14 @@ iframe {
   height: 0;
   border-style: solid;
   border-width: 20px 0 20px 45px;
-  border-color: transparent transparent transparent #6b67a2;
+  border-color: transparent transparent transparent #fa439f;
   position: absolute;
   top: 70px;
   right: -43px;
 }
 @media screen and (min-width: 0) and (max-width: 768px) {
   .news-bubble-triangle {
-    border-color: #6b67a2 transparent transparent transparent;
+    border-color: #fa439f transparent transparent transparent;
     border-width: 45px 20px 0 20px;
     top: 99%;
     right: 30%;
@@ -349,7 +351,7 @@ iframe {
 }
 .news-photo img {
   border-radius: 50%;
-  border: 7px solid #6b67a2;
+  border: 7px solid #fa439f;
   width: 100%;
 }
 @media screen and (min-width: 0) and (max-width: 768px) {
@@ -447,7 +449,6 @@ iframe {
 /* TICKETS
 ----------------------------------------------------- */
 #tickets {
-  background: url("/images/dark_embroidery.png") repeat;
   display: table;
   width: 100%;
 }

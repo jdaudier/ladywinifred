@@ -9,6 +9,8 @@ html
   box-sizing inherit
 
 body
+  /* To edit this gradient: http://colorzilla.com/gradient-editor/#b0abe3+0,8282be+0,46427f+50,8282be+100 */
+  background linear-gradient(to right, rgba(176,171,227,1) 0%, rgba(130,130,190,1) 0%, rgba(70,66,127,1) 50%, rgba(130,130,190,1) 100%)
   display flex
   font-family "Oswald", sans-serif
   font-weight 300
@@ -97,7 +99,7 @@ nav
       width auto
 
 .animated-divider
-  border-bottom 7px solid
+  border-bottom 14px solid
   border-color white
   width 0
 
@@ -109,7 +111,7 @@ main
   text-align center
 
 .photo-credit
-  color $purple
+  color $light_gray
   font-size .7rem
   letter-spacing 1.3px
   position absolute
@@ -125,23 +127,24 @@ main
     transform none
 
   a
-    color $purple
+    color $light_gray
     text-decoration none
-    border-bottom 1px solid rgba(107, 103, 162, 0)
+    border-bottom 1px solid rgba(220, 220, 220, 0)
     transition border 500ms ease
 
     &:hover
-      border-bottom 1px solid rgba(107, 103, 162, 1)
+      border-bottom 1px solid rgba(220, 220, 220, 1)
 
 
 iframe
+  border 7px solid white
   border-radius 6px
 
   @media screen and (min-width: 0) and (max-width: $mobile_end)
       border-radius 0
 
 .description
-  color $dove_gray
+  color white
   font-size 2.1rem
   line-height 1.85
   margin-top 40px
@@ -158,7 +161,6 @@ iframe
     padding-right 20px
 
 #news
-  background $light_gray
   display table
   width 100%
 
@@ -184,7 +186,7 @@ iframe
     width 100%
 
 .news-bubble
-  background $purple
+  background $violet_red
   border-radius 6px
   color white
   font-size 1.82rem
@@ -239,13 +241,13 @@ iframe
   height 0
   border-style solid
   border-width 20px 0 20px 45px
-  border-color transparent transparent transparent $purple
+  border-color transparent transparent transparent $violet_red
   position absolute
   top 70px
   right -43px
 
   @media screen and (min-width: 0) and (max-width: $tablet_p_end)
-      border-color $purple transparent transparent transparent
+      border-color $violet_red transparent transparent transparent
       border-width 45px 20px 0 20px
       top 99%
       right 30%
@@ -265,7 +267,7 @@ iframe
 
   img
     border-radius 50%
-    border 7px solid $purple
+    border 7px solid $violet_red
     width 100%
 
     @media screen and (min-width: 0) and (max-width: $tablet_p_end)
@@ -356,7 +358,6 @@ iframe
 ----------------------------------------------------- */
 
 #tickets
-  background url("/images/dark_embroidery.png") repeat
   display table
   width 100%
 
